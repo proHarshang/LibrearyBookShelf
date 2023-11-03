@@ -19,6 +19,6 @@ books.forEach(book => {
         openBook_wrapper.style.display = 'flex';
         openBook_wrapper.querySelector('.front').style.backgroundImage = `url('${book_img}')`;
         openBook_wrapper.querySelector('.back').style.backgroundImage = `url('${book_img}')`;
-        // setTimeout(() => window.location.href = book_link, 1700);
+        setTimeout(() => window.location.href = book_link, 1700);
     })
 });
