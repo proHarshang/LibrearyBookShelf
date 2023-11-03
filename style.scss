@@ -21,6 +21,7 @@ body {
   width: 90%;
   max-width: 1000px;
   display: flex;
+  gap: 30px;
   height: 80px;
   margin: 20px 0px;
   justify-content: center;
@@ -63,6 +64,12 @@ body {
     width: 7vmin;
     background-color: #412a00;
     transform: translateY(-107%);
+  }
+  img {
+    height: 65%;
+    &:nth-of-type(2) {
+      transform: rotateY(180deg);
+    }
   }
 }
 .px-40 {
@@ -327,7 +334,7 @@ body {
     .page6 {
       transform-style: preserve-3d;
       position: absolute;
-      border: 0.5px solid #0000002e;
+      border: 1px solid #412a008f;
       width: 140px;
       height: 100%;
       top: 0;
@@ -349,6 +356,8 @@ body {
     .page5 {
       border-bottom-right-radius: 0.5em;
       border-top-right-radius: 0.5em;
+      background-image: url(images/leftPage.png);
+      box-shadow: -3px 0px 13px 0px black;
     }
 
     .back,
@@ -357,6 +366,8 @@ body {
     .page6 {
       border-bottom-right-radius: 0.5em;
       border-top-right-radius: 0.5em;
+      background-image: url(images/rightPage.png);
+      box-shadow: 3px 0px 13px 0px black;
     }
 
     .front {
@@ -372,7 +383,6 @@ body {
     .page4,
     .page5,
     .page6 {
-      background-image: url(images/page.png);
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
@@ -404,8 +414,7 @@ body {
       }
       100% {
         transform: rotateY(-160deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-        filter: brightness(0.4);
+        filter: brightness(0.2);
       }
     }
     @keyframes page1 {
@@ -414,8 +423,7 @@ body {
         box-shadow: none;
       }
       100% {
-        transform: rotateY(-150deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+        transform: rotateY(-152deg) scale(1.1);
       }
     }
     @keyframes page2 {
@@ -424,8 +432,7 @@ body {
         box-shadow: none;
       }
       100% {
-        transform: rotateY(-30deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+        transform: rotateY(-28deg) scale(1.1);
       }
     }
     @keyframes page3 {
@@ -434,8 +441,7 @@ body {
         box-shadow: none;
       }
       100% {
-        transform: rotateY(-140deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+        transform: rotateY(-142deg) scale(1.1);
       }
     }
     @keyframes page4 {
@@ -444,8 +450,7 @@ body {
         box-shadow: none;
       }
       100% {
-        transform: rotateY(-40deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+        transform: rotateY(-38deg) scale(1.1);
       }
     }
     @keyframes page5 {
@@ -454,8 +459,7 @@ body {
         box-shadow: none;
       }
       100% {
-        transform: rotateY(-130deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+        transform: rotateY(-133deg) scale(1.1);
       }
     }
     @keyframes page6 {
@@ -464,8 +468,7 @@ body {
         box-shadow: none;
       }
       100% {
-        transform: rotateY(-50deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+        transform: rotateY(-47deg) scale(1.1);
       }
     }
     @keyframes back {
@@ -476,8 +479,7 @@ body {
       }
       100% {
         transform: rotateY(-20deg) scale(1.1);
-        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-        filter: brightness(0.4);
+        filter: brightness(0.2);
       }
     }
   }

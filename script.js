@@ -15,14 +15,10 @@ books.forEach(book => {
         let book_name = book.getAttribute('data-name');
         let book_link = book.getAttribute('data-link');
         let book_img = book.getAttribute('data-img');
-        if (book_name != 'new') {
-            book.parentElement.style.opacity = 0;
-            openBook_wrapper.style.display = 'flex';
-            openBook_wrapper.querySelector('.front').style.backgroundImage = `url('${book_img}')`;
-            openBook_wrapper.querySelector('.back').style.backgroundImage = `url('${book_img}')`;
-            setTimeout(() => window.location.href = book_link, 1700);
-        } else {
-            window.location.href = book_link;
-        }
+        book.parentElement.style.opacity = 0;
+        openBook_wrapper.style.display = 'flex';
+        openBook_wrapper.querySelector('.front').style.backgroundImage = `url('${book_img}')`;
+        openBook_wrapper.querySelector('.back').style.backgroundImage = `url('${book_img}')`;
+        // setTimeout(() => window.location.href = book_link, 1700);
     })
 });
